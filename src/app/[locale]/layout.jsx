@@ -12,6 +12,17 @@ export async function generateMetadata({ params }) {
   return {
     title: dict.common.brand,
     description: dict.common.tagline,
+    openGraph: {
+      title: dict.common.brand,
+      description: dict.common.tagline,
+      images: ['/og.jpg'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: dict.common.brand,
+      description: dict.common.tagline,
+      images: ['/og.jpg'],
+    },
   };
 }
 
