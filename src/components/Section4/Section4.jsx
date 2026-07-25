@@ -6,7 +6,6 @@ import { useI18n } from '@/i18n/context';
 import styles from './Section4.module.scss';
 
 const FX_NONE = 'none';
-const FX_GRAIN = 'grain';
 
 export default function Section4() {
   const { dict } = useI18n();
@@ -15,12 +14,6 @@ export default function Section4() {
   const [gesture, setGesture] = useState(null);
   const mainCameraRef = useRef(null);
   const camTargetRef = useRef(null);
-  const [fx, setFx] = useState(FX_NONE);
-
-  const FX_OPTIONS = [
-    { key: FX_NONE, label: dict.section4.fxOff },
-    { key: FX_GRAIN, label: dict.section4.fxGrain },
-  ];
 
   useEffect(() => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -254,10 +247,6 @@ export default function Section4() {
     };
   }, [glbScene]);
 
-  const fxClass =
-    fx === FX_GRAIN ? styles.fxGrain :
-    '';
-
   return (
     <section className={styles.section}>
       <div className={styles.left}>
@@ -269,18 +258,7 @@ export default function Section4() {
         </p>
       </div>
       <div className={styles.right}>
-        <div className={`${styles.canvasArea} ${fxClass}`} ref={containerRef}>
-          <div className={styles.fxPanel}>
-            {FX_OPTIONS.map((opt) => (
-              <button
-                key={opt.key}
-                className={`${styles.fxBtn} ${fx === opt.key ? styles.fxBtnActive : ''}`}
-                onClick={() => setFx(opt.key)}
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
+        <div className={styles.canvasArea} ref={containerRef}>
           {gesture && (
             <div className={`${styles.gestureHint} ${styles.gestureHintVisible}`}>
               {gesture === 'scroll' ? (
