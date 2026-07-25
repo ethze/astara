@@ -1,0 +1,255 @@
+.section {
+  height: 70svh;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.topMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(10px, 1.2vw, 12px);
+  color: var(--text-secondary);
+  padding: clamp(8px, 1.2vw, 12px);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  min-height: 0;
+}
+
+.left,
+.right {
+  padding: clamp(8px, 1.2vw, 12px);
+  position: relative;
+  border-top: 1px solid var(--border);
+}
+
+.right {
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTitle {
+  font-size: clamp(24px, 3.5vw, 48px);
+  font-weight: 600;
+  max-width: 620px;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.heroSub {
+  font-size: clamp(13px, 1.5vw, 15px);
+  color: var(--text-secondary);
+}
+
+.bottomText {
+  position: absolute;
+  left: clamp(8px, 1.2vw, 12px);
+  bottom: clamp(8px, 1.2vw, 12px);
+  font-size: clamp(16px, 2vw, 26px);
+  font-weight: 400;
+  max-width: 540px;
+  color: var(--text-secondary);
+}
+
+.exp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expBox {
+  text-align: right;
+}
+
+.expNum {
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.expLabel {
+  font-size: clamp(12px, 1.4vw, 14px);
+  color: var(--text-secondary);
+  margin: 4px 0 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  height: clamp(36px, 4vw, 42px);
+  font-size: clamp(11px, 1.3vw, 13px);
+  text-decoration: none;
+  color: var(--text);
+  overflow: hidden;
+}
+
+.btn span {
+  padding: 0 22px;
+}
+
+.btnIcon {
+  width: calc(var(--text-width, 42px) * 0.8);
+  height: clamp(36px, 4vw, 42px);
+  display: grid;
+  place-items: center;
+  background: var(--text);
+  color: var(--bg);
+  font-style: normal;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+:global(.dark) .btnIcon {
+  background: #474747;
+  color: #ffffff;
+}
+
+.what {
+  margin-top: auto;
+  font-size: clamp(12px, 1.4vw, 14px);
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(8px, 1vw, 12px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.itemTitle {
+  font-size: clamp(12px, 1.4vw, 14px);
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  transition: 0.35s;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: clamp(10px, 1.2vw, 12px);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.tag {
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.tag:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+}
+
+.outsource {
+  border-bottom: 1px solid var(--border);
+}
+
+.outsourceInner {
+  padding: clamp(24px, 4vw, 48px) clamp(8px, 1.2vw, 12px);
+}
+
+.outsourceTitle {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 700;
+  margin: 0 0 clamp(16px, 2vw, 24px);
+  text-transform: uppercase;
+}
+
+.outsourceText {
+  font-size: clamp(13px, 1.1vw, 16px);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0;
+}
+
+.outsourceText:last-child {
+  margin-bottom: 0;
+}
+
+.outsourceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(16px, 2vw, 32px);
+}
+
+@media (min-width: 769px) {
+  .outsourceGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    height: auto;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .bottomText {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 120px;
+  }
+
+  .exp {
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: clamp(28px, 5vw, 48px);
+  }
+
+  .tags {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    width: 50%;
+  }
+
+  .tag:not(:last-child)::after {
+    display: none;
+  }
+
+  .item {
+    align-items: flex-start;
+  }
+
+  .itemTitle {
+    width: 50%;
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "common": {
+    "back": "Back",
+    "optional": "(optional)",
+    "brand": "PT Andalan Satu Nusantara",
+    "tagline": "Technology Integration"
+  },
+  "nav": {
+    "services": "Services",
+    "products": "Products",
+    "about": "About",
+    "aboutUs": "About Us",
+    "career": "Career",
+    "contact": "Contact Us",
+    "language": "Language",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "bahasa": "Bahasa Indonesia",
+    "english": "English"
+  },
+  "navProducts": {
+    "interactiveChair": "Interactive Chair",
+    "smartboard": "Smartboard",
+    "ledVideotron": "LED Videotron",
+    "gsmJammer": "GSM Jammer",
+    "gsmLteBts": "GSM / LTE BTS",
+    "imsiCatcher": "IMSI Catcher"
+  },
+  "hero": {
+    "badgeYear": "2026",
+    "badgeText": "Intelligence in Action",
+    "title1": "A leading force",
+    "title2": "in Tech",
+    "title3": "Innovation",
+    "bodyPrimary": "Our commitment to reshaping better living defines our essence.",
+    "bodySecondary": "With a focus on innovation and quality.",
+    "cta": "Start Consulting"
+  },
+  "section2": {
+    "label": "Our Services",
+    "metaLeft": "2017",
+    "metaRight": "Today",
+    "title1": "Technology",
+    "title2": "Solutions",
+    "subtitle": "built for every need",
+    "desc": "Delivering innovation that combines functionality with real impact",
+    "expNumber": "5",
+    "expLabel": "Years of Experience",
+    "btnText": "Learn More",
+    "outsourceTitle": "IT Outsourcing Partner",
+    "outsourceP1": "For companies that choose to outsource, it is essential that their partner handles those tasks so the company can focus on its core business competencies. Additionally, this enables the company to save and control operational costs. ASTARA is ready to be your effective IT Services partner!",
+    "outsourceP2": "Piepay as a PoS application was launched in response to a summary of transaction experiences at various stores and shopping behaviors that have undergone a process of testing and refinement."
+  },
+  "section4": {
+    "fxOff": "Off",
+    "fxGrain": "Grain",
+    "title": "Intelligent systems for interactive comfort",
+    "desc": "Welcome to PT Andalan Satu Nusantara (ASTARA). We deliver cutting-edge mechatronics innovation through customized interactive chairs and desks. By integrating electrical components, motion actuators, and precision control systems, we elevate living and operational spaces beyond expectations.",
+    "dragHint": "Drag to rotate",
+    "zoomHintDesktop": "Ctrl + Scroll / Pinch to zoom",
+    "zoomHintMobile": "Pinch to zoom in/out",
+    "spec1": "Product: Interactive Chair & Mechatronics",
+    "spec2": "Customization: Racing Simulator (2DOF / 3DOF)",
+    "spec3": "Drawing Code : 1000747"
+  },
+  "section5": {
+    "label": "Products",
+    "title1": "Built for",
+    "title2": "performance"
+  },
+  "gallery": {
+    "label": "Moments & Documentation",
+    "title1": "Moments from the",
+    "title2": "field",
+    "desc": "Highlights from project implementations, deployments, seminars, and strategic collaborations with our clients and partners across industries.",
+    "items": [
+      { "meta": "01 / Design Process", "title": "Design Process", "desc": "Behind the scenes of our design workflow, from initial concept sketches to final prototype development." },
+      { "meta": "02 / Assembly", "title": "Electronics Assembly", "desc": "Astara's internal team assembling the electronics for the interactive chair system, ensuring every component is precisely integrated." },
+      { "meta": "03 / Product Demo", "title": "AAU Governor's Inspection", "desc": "Air Vice Marshal Donald Kasenda, S.T., S.I.P., M.M., personally inspected the Interactive Chair built by Astara at the Space Laboratory, Viratama V Building, AAU Compound, Yogyakarta." },
+      { "meta": "04 / Product Demo", "title": "Interactive Chair Demo", "desc": "AAU Governor Air Vice Marshal Donald Kasenda experienced first-hand the features of the interactive chair developed by Astara, showcasing precision sensor integration and mechatronics." },
+      { "meta": "05 / Installation", "title": "Interactive Chair Installation", "desc": "On-site installation process of the interactive chair system at our client facility, ensuring proper setup and calibration." },
+      { "meta": "06 / Installation", "title": "Interactive Chair Installation & Training", "desc": "Astara team photo in front of the Air Force Academy (AAU) building during the installation and training of the interactive chair." }
+    ]
+  },
+  "about": {
+    "label": "About Us",
+    "title1": "Astara; Paving way of",
+    "title2": "sustainable future",
+    "intro": "Who is Astara, we are professionals who have gained a lot of experience to deliver projects according to the agreed performance index. PT. Andalan Satu Nusantara, who later introduced themselves as Astara, is a professional group dedicated to the world of technology applications. We believe a sustainable future is only possible when everyone can enjoy smart, safe and environmentally friendly technology.",
+    "milestonesTitle": "Important Milestones",
+    "milestones": [
+      { "year": "2021", "items": ["Following the government's direction to use the internet as a means to advance the nation, we ventured to participate in deploying the digitalization of the world of education through KUBUKU"] },
+      { "year": "2022", "items": ["Establishment of Astara as IT company in Jakarta as center of our business.", "Business platform; Piepay the first version successfully compiled as Point of Sales application", "Piepay enhancement, and commercially launch as SaaS"] },
+      { "year": "2023", "items": ["Going forward as Payment Gateway"] }
+    ],
+    "philosophyTitle": "Our Philosophy",
+    "philosophyDesc": "Driven by a profound philosophy, Astara sees innovation technology as a means to enhance lives and communities. Our team of professionals collaborates to deliver projects marked by sustainable practices, modern design, and technological innovation. Customer satisfaction is paramount as we strive to create spaces that cater to the unique needs of our clients.",
+    "visionTitle": "Vision for the Future",
+    "visionDesc": "Looking ahead, Astara aspires to expand globally, leaving a lasting impact on skylines and neighborhoods. Committed to ethical practices and transparency, we aim to continually redefine industry standards. Join us in shaping the future of technology innovations, where each project embodies innovation, sustainability, and enduring quality.",
+    "valuesTitle": "Our Values",
+    "values": [
+      { "title": "Professionalism", "desc": "We build trust by completing our commitments responsibly" },
+      { "title": "Respect", "desc": "We believe each of us is unique in both ability and perspective on a problem, but we respect each other and unite in one collaboration" },
+      { "title": "Integrity", "desc": "To be honest, transparent, have a strong stand and the most important thing is to be ethical in every job completion." }
+    ]
+  },
+  "services": {
+    "label": "Our Services",
+    "title1": "Comprehensive technology solutions for",
+    "title2": "every need",
+    "intro": "From hardware to software, infrastructure to UI/UX — we deliver end-to-end technology services that drive innovation and efficiency across every industry."
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title1": "Let's build something",
+    "title2": "great together",
+    "intro": "Have a project in mind or need a technology partner? Reach out to us and our team will get back to you within 24 hours.",
+    "formTitle": "Send us a message",
+    "name": "Your name",
+    "email": "Your email",
+    "phone": "Phone",
+    "message": "Your message",
+    "submit": "Send Message",
+    "infoTitle": "Get in touch",
+    "addressLabel": "Address",
+    "addressValue": "Menara 165, 4th Floor, Jl. TB Simatupang Kav.1, Cilandak Timur, Jakarta Selatan 12560",
+    "emailLabel": "Email",
+    "emailValue": "office@astara.id",
+    "phoneLabel": "Phone",
+    "phoneValue": "0859 2532 7256",
+    "hoursLabel": "Working hours",
+    "hoursValue": "Monday – Friday, 09:00 – 18:00 WIB"
+  },
+  "career": {
+    "label": "Career",
+    "title1": "Join our team and shape the",
+    "title2": "future of tech",
+    "intro": "We're always looking for talented individuals who are passionate about technology and innovation. Explore our open positions and find your next opportunity.",
+    "positionsTitle": "Available Positions",
+    "requirements": "Requirements",
+    "applyTitle": "Apply now",
+    "name": "Your name",
+    "email": "Your email",
+    "phone": "Phone",
+    "message": "Your message",
+    "uploadCv": "Upload your CV",
+    "chooseFile": "Choose file",
+    "uploadHint": "PDF, DOC, or DOCX (max 5MB)",
+    "submit": "Submit Application",
+    "positions": [
+      { "title": "Frontend Developer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Build and maintain responsive web applications using modern JavaScript frameworks.", "requirements": ["2+ years experience with React / Next.js", "Strong understanding of HTML, CSS, and JavaScript", "Experience with responsive design and cross-browser compatibility", "Familiarity with version control (Git)", "Good communication and teamwork skills"] },
+      { "title": "Backend Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Design and develop scalable server-side applications and APIs.", "requirements": ["3+ years experience in backend development", "Proficiency in Node.js, Python, or Go", "Experience with relational and non-relational databases", "Understanding of cloud services (AWS/GCP)", "Strong problem-solving and analytical skills"] },
+      { "title": "UI/UX Designer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Create intuitive and visually compelling interfaces for web and mobile products.", "requirements": ["2+ years experience in UI/UX design", "Proficiency in Figma or similar design tools", "Strong portfolio showcasing design thinking", "Understanding of accessibility and usability principles", "Ability to collaborate closely with developers"] },
+      { "title": "Network Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Deploy, configure, and maintain enterprise network infrastructure.", "requirements": ["3+ years experience in network engineering", "CCNA/CCNP certification preferred", "Experience with firewall, VPN, and load balancer configuration", "Knowledge of TCP/IP, DNS, and routing protocols", "Ability to troubleshoot complex network issues"] },
+      { "title": "Project Manager", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Lead cross-functional teams to deliver technology projects on time and within budget.", "requirements": ["3+ years experience in project management", "PMP or Scrum Master certification is a plus", "Strong organizational and leadership skills", "Excellent communication with stakeholders", "Experience with Agile/Scrum methodologies"] }
+    ]
+  },
+  "productDetail": {
+    "specs": "Specifications",
+    "features": "Features",
+    "notFound": "Product not found"
+  },
+  "footer": {
+    "cta": "Start Consulting",
+    "headOffice": "Head Office",
+    "navigation": "Navigation",
+    "contactTitle": "Contact",
+    "copyright": "© 2026 Astara. All rights reserved.",
+    "techIntegration": "Tech Integration"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  }
+}

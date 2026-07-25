@@ -1,0 +1,176 @@
+{
+  "common": {
+    "back": "Kembali",
+    "optional": "(opsional)",
+    "brand": "PT Andalan Satu Nusantara",
+    "tagline": "Integrasi Teknologi"
+  },
+  "nav": {
+    "services": "Layanan",
+    "products": "Produk",
+    "about": "Tentang",
+    "aboutUs": "Tentang Kami",
+    "career": "Karir",
+    "contact": "Hubungi Kami",
+    "language": "Bahasa",
+    "closeMenu": "Tutup menu",
+    "openMenu": "Buka menu",
+    "bahasa": "Bahasa Indonesia",
+    "english": "Inggris"
+  },
+  "navProducts": {
+    "interactiveChair": "Interactive Chair",
+    "smartboard": "Smartboard",
+    "ledVideotron": "LED Videotron",
+    "gsmJammer": "GSM Jammer",
+    "gsmLteBts": "GSM / LTE BTS",
+    "imsiCatcher": "IMSI Catcher"
+  },
+  "hero": {
+    "badgeYear": "2026",
+    "badgeText": "Kecerdasan dalam Aksi",
+    "title1": "Kekuatan utama",
+    "title2": "dalam Inovasi",
+    "title3": "Teknologi",
+    "bodyPrimary": "Komitmen kami untuk membentuk kehidupan yang lebih baik mendefinisikan inti kami.",
+    "bodySecondary": "Dengan fokus pada inovasi dan kualitas.",
+    "cta": "Mulai Konsultasi"
+  },
+  "section2": {
+    "label": "Layanan Kami",
+    "metaLeft": "2017",
+    "metaRight": "Sekarang",
+    "title1": "Solusi Teknologi",
+    "title2": "yang Terukur",
+    "subtitle": "untuk setiap kebutuhan",
+    "desc": "Menghadirkan inovasi yang memadukan fungsionalitas dan dampak nyata",
+    "expNumber": "5",
+    "expLabel": "Tahun Pengalaman",
+    "btnText": "Pelajari Lebih Lanjut",
+    "outsourceTitle": "Mitra IT Outsourcing",
+    "outsourceP1": "Bagi perusahaan yang memilih untuk melakukan outsourcing, sangat penting bahwa mitra mereka menangani tugas-tugas tersebut agar perusahaan dapat fokus pada kompetensi utama bisnisnya. Selain itu, hal ini juga memungkinkan perusahaan untuk menghemat dan mengendalikan biaya operasional. ASTARA siap menjadi mitra Layanan IT yang efektif!",
+    "outsourceP2": "Piepay sebagai aplikasi PoS diluncurkan sebagai respons terhadap rangkuman pengalaman bertransaksi di berbagai toko dan perilaku belanja yang telah melalui proses pengujian dan penyempurnaan."
+  },
+  "section4": {
+    "fxOff": "Mati",
+    "fxGrain": "Grain",
+    "title": "Sistem cerdas untuk kenyamanan interaktif",
+    "desc": "Selamat datang di PT Andalan Satu Nusantara (ASTARA). Kami menghadirkan inovasi mekatronika terdepan melalui kursi dan meja interaktif yang disesuaikan. Dengan mengintegrasikan komponen elektrik, aktuator gerakan, dan sistem kontrol presisi, kami meningkatkan ruang hidup dan operasional melampaui ekspektasi.",
+    "dragHint": "Seret untuk memutar",
+    "zoomHintDesktop": "Ctrl + Scroll / Cubit untuk zoom",
+    "zoomHintMobile": "Cubit untuk zoom in/out",
+    "spec1": "Produk: Interactive Chair & Mechatronics",
+    "spec2": "Kustomisasi: Racing Simulator (2DOF / 3DOF)",
+    "spec3": "Drawing Code : 1000747"
+  },
+  "section5": {
+    "label": "Produk",
+    "title1": "Dirancang untuk",
+    "title2": "kinerja"
+  },
+  "gallery": {
+    "label": "Momen & Dokumentasi",
+    "title1": "Momen dari",
+    "title2": "lapangan",
+    "desc": "Sorotan dari implementasi proyek, deployemen, seminar, dan kolaborasi strategis dengan klien dan mitra kami di berbagai industri.",
+    "items": [
+      { "meta": "01 / Proses Desain", "title": "Proses Desain", "desc": "Di balik layar alur kerja desain kami, dari sketsa konsep awal hingga pengembangan prototipe akhir." },
+      { "meta": "02 / Rangkaian", "title": "Rangkaian Elektronika", "desc": "Tim internal Astara sedang merangkai rangkaian elektronika untuk sistem kursi interaktif, memastikan setiap komponen terintegrasi dengan presisi." },
+      { "meta": "03 / Demo Produk", "title": "Peninjauan Gubernur AAU", "desc": "Marsekal Muda TNI Donald Kasenda, S.T., S.I.P., M.M., meninjau langsung Interactive Chair buatan Astara di Laboratorium Antariksa, Gedung Viratama V, Kesatrian AAU, Yogyakarta." },
+      { "meta": "04 / Demo Produk", "title": "Demo Interaktif Chair", "desc": "Gubernur AAU Marsekal Muda TNI Donald Kasenda mencoba langsung fitur-fitur kursi interaktif yang dikembangkan oleh tim Astara, menunjukkan integrasi sensor dan mekatronika yang presisi." },
+      { "meta": "05 / Instalasi", "title": "Instalasi Interactive Chair", "desc": "Proses instalasi di lokasi sistem kursi interaktif di fasilitas klien kami, memastikan pengaturan dan kalibrasi yang tepat." },
+      { "meta": "06 / Instalasi", "title": "Instalasi & Pelatihan Interactive Chair", "desc": "Tim Astara berfoto di depan gedung Akademi Angkatan Udara (AAU) saat proses instalasi dan pelatihan penggunaan interactive chair." }
+    ]
+  },
+  "about": {
+    "label": "Tentang Kami",
+    "title1": "Astara; Menunjukkan jalan",
+    "title2": "masa depan berkelanjutan",
+    "intro": "Siapa Astara, kami adalah profesional yang telah mendapatkan banyak pengalaman dalam menyelesaikan proyek sesuai indeks kinerja yang telah disepakati. PT. Andalan Satu Nusantara, yang kemudian memperkenalkan diri sebagai Astara, adalah kelompok profesional yang berdedikasi di dunia aplikasi teknologi. Kami percaya masa depan yang berkelanjutan hanya mungkin ketika semua orang dapat menikmati teknologi yang cerdas, aman, dan ramah lingkungan.",
+    "milestonesTitle": "Milestone Penting",
+    "milestones": [
+      { "year": "2021", "items": ["Mengikuti arahan pemerintah untuk menggunakan internet sebagai sarana memajukan bangsa, kami berupaya berpartisipasi dalam mengimplementasikan digitalisasi dunia pendidikan melalui KUBUKU"] },
+      { "year": "2022", "items": ["Pendirian Astara sebagai perusahaan IT di Jakarta sebagai pusat bisnis kami.", "Platform bisnis; Piepay versi pertama berhasil disusun sebagai aplikasi Point of Sales", "Peningkatan Piepay, dan peluncuran komersial sebagai SaaS"] },
+      { "year": "2023", "items": ["Melangkah maju sebagai Payment Gateway"] }
+    ],
+    "philosophyTitle": "Filosofi Kami",
+    "philosophyDesc": "Didorong oleh filosofi yang mendalam, Astara memandang inovasi teknologi sebagai sarana untuk meningkatkan kehidupan dan komunitas. Tim profesional kami berkolaborasi untuk memberikan proyek yang ditandai dengan praktik berkelanjutan, desain modern, dan inovasi teknologi. Kepuasan pelanggan adalah yang terpenting saat kami berusaha menciptakan ruang yang memenuhi kebutuhan unik klien kami.",
+    "visionTitle": "Visi untuk Masa Depan",
+    "visionDesc": "Ke depan, Astara bercita-cita untuk berkembang secara global, meninggalkan dampak abadi pada cakrawala dan lingkungan sekitar. Berkomitmen pada praktik etis dan transparansi, kami bertujuan untuk terus mendefinisikan ulang standar industri. Bergabunglah dengan kami dalam membentuk masa depan inovasi teknologi, di mana setiap proyek mempersonifikasikan inovasi, keberlanjutan, dan kualitas yang bertahan lama.",
+    "valuesTitle": "Nilai-Nilai Kami",
+    "values": [
+      { "title": "Profesionalisme", "desc": "Kami membangun kepercayaan dengan menyelesaikan komitmen kami secara bertanggung jawab" },
+      { "title": "Saling Menghargai", "desc": "Kami percaya setiap dari kita unik dalam kemampuan dan perspektif terhadap suatu masalah, tetapi kami saling menghormati dan bersatu dalam satu kolaborasi" },
+      { "title": "Integritas", "desc": "Untuk jujur, transparan, memiliki pendirian yang kuat dan yang paling penting adalah bersikap etis dalam setiap penyelesaian pekerjaan." }
+    ]
+  },
+  "services": {
+    "label": "Layanan Kami",
+    "title1": "Solusi teknologi komprehensif untuk",
+    "title2": "setiap kebutuhan",
+    "intro": "Dari perangkat keras hingga perangkat lunak, infrastruktur hingga UI/UX — kami memberikan layanan teknologi end-to-end yang mendorong inovasi dan efisiensi di setiap industri."
+  },
+  "contact": {
+    "label": "Hubungi Kami",
+    "title1": "Mari membangun sesuatu",
+    "title2": "bersama",
+    "intro": "Punya proyek yang ingin diwujudkan atau butuh mitra teknologi? Hubungi kami dan tim kami akan merespons dalam 24 jam.",
+    "formTitle": "Kirim pesan",
+    "name": "Nama Anda",
+    "email": "Email Anda",
+    "phone": "Telepon",
+    "message": "Pesan Anda",
+    "submit": "Kirim Pesan",
+    "infoTitle": "Hubungi kami",
+    "addressLabel": "Alamat",
+    "addressValue": "Menara 165, Lt. 4, Jl. TB Simatupang Kav.1, Cilandak Timur, Jakarta Selatan 12560",
+    "emailLabel": "Email",
+    "emailValue": "office@astara.id",
+    "phoneLabel": "Telepon",
+    "phoneValue": "0859 2532 7256",
+    "hoursLabel": "Jam kerja",
+    "hoursValue": "Senin – Jumat, 09:00 – 18:00 WIB"
+  },
+  "career": {
+    "label": "Karir",
+    "title1": "Bergabunglah dengan tim kami dan bentuk",
+    "title2": "masa depan teknologi",
+    "intro": "Kami selalu mencari individu berbakat yang memiliki semangat terhadap teknologi dan inovasi. Jelajahi posisi terbuka kami dan temukan kesempatan berikutnya.",
+    "positionsTitle": "Posisi Tersedia",
+    "requirements": "Persyaratan",
+    "applyTitle": "Lamar sekarang",
+    "name": "Nama Anda",
+    "email": "Email Anda",
+    "phone": "Telepon",
+    "message": "Pesan Anda",
+    "uploadCv": "Unggah CV Anda",
+    "chooseFile": "Pilih file",
+    "uploadHint": "PDF, DOC, atau DOCX (maks 5MB)",
+    "submit": "Kirim Lamaran",
+    "positions": [
+      { "title": "Frontend Developer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Membangun dan memelihara aplikasi web responsif menggunakan framework JavaScript modern.", "requirements": ["Pengalaman 2+ tahun dengan React / Next.js", "Pemahaman kuat tentang HTML, CSS, dan JavaScript", "Pengalaman dengan desain responsif dan kompatibilitas lintas browser", "Familiaritas dengan version control (Git)", "Kemampuan komunikasi dan kerja tim yang baik"] },
+      { "title": "Backend Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Merancang dan mengembangkan aplikasi server-side yang skalabel dan API.", "requirements": ["Pengalaman 3+ tahun dalam pengembangan backend", "Keahlian dalam Node.js, Python, atau Go", "Pengalaman dengan database relasional dan non-relasional", "Pemahaman layanan cloud (AWS/GCP)", "Kemampuan pemecahan masalah dan analitis yang kuat"] },
+      { "title": "UI/UX Designer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Menciptakan antarmuka yang intuitif dan menarik secara visual untuk produk web dan seluler.", "requirements": ["Pengalaman 2+ tahun dalam desain UI/UX", "Keahlian dalam Figma atau alat desain serupa", "Portofolio kuat yang menunjukkan design thinking", "Pemahaman prinsip aksesibilitas dan kegunaan", "Kemampuan berkolaborasi erat dengan pengembang"] },
+      { "title": "Network Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Mengkonfigurasi, dan memelihara infrastruktur jaringan perusahaan.", "requirements": ["Pengalaman 3+ tahun dalam rekayasa jaringan", "Sertifikasi CCNA/CCNP lebih disukai", "Pengalaman dengan konfigurasi firewall, VPN, dan load balancer", "Pengetahuan TCP/IP, DNS, dan protokol routing", "Kemampuan memecahkan masalah jaringan yang kompleks"] },
+      { "title": "Project Manager", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Memimpin tim lintas fungsi untuk menghasilkan proyek teknologi tepat waktu dan sesuai anggaran.", "requirements": ["Pengalaman 3+ tahun dalam manajemen proyek", "Sertifikasi PMP atau Scrum Master merupakan nilai tambah", "Keterampilan organisasi dan kepemimpinan yang kuat", "Komunikasi yang sangat baik dengan pemangku kepentingan", "Pengalaman dengan metodologi Agile/Scrum"] }
+    ]
+  },
+  "productDetail": {
+    "specs": "Spesifikasi",
+    "features": "Fitur",
+    "notFound": "Produk tidak ditemukan"
+  },
+  "footer": {
+    "cta": "Mulai Konsultasi",
+    "headOffice": "Kantor Pusat",
+    "navigation": "Navigasi",
+    "contactTitle": "Kontak",
+    "copyright": "© 2026 Astara. Hak cipta dilindungi.",
+    "techIntegration": "Integrasi Teknologi"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "desc": "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "cta": "Kembali ke beranda"
+  }
+}

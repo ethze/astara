@@ -1,0 +1,238 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  height: calc(100svh - var(--header-h, 40px));
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(8px, 1.2vw, 12px);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 769px) {
+  .left {
+    border-bottom: none;
+  }
+}
+
+.heading {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--text);
+  max-width: 600px;
+  margin-bottom: clamp(20px, 2.5vw, 32px);
+}
+
+.desc {
+  font-size: clamp(13px, 1.1vw, 16px);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 460px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  min-height: 0;
+}
+
+@media (min-width: 769px) {
+  .right {
+    border-bottom: none;
+    border-left: 1px solid var(--border);
+  }
+}
+
+.canvasArea {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.canvasArea canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+.gestureHint {
+  position: absolute;
+  bottom: clamp(8px, 1.2vw, 12px);
+  left: clamp(8px, 1.2vw, 12px);
+  transform: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  font-size: clamp(10px, 0.8vw, 12px);
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+  animation: gestureFadeIn 0.4s ease 0.5s forwards;
+  white-space: nowrap;
+}
+
+.gestureHintVisible {}
+
+.gestureItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
+}
+
+.gestureItem svg {
+  flex-shrink: 0;
+}
+
+.gestureDivider {
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+}
+
+@keyframes gestureFadeIn {
+  to { opacity: 1; }
+}
+
+.metaBar {
+  width: 100%;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(11px, 0.9vw, 13px);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.specRow {
+  padding: clamp(10px, 1.2vw, 16px) clamp(16px, 2vw, 24px);
+  border-bottom: 1px solid var(--border);
+}
+
+.specRow:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    font-size: clamp(20px, 6vw, 28px);
+    margin-bottom: clamp(8px, 2vw, 16px);
+  }
+
+  .desc {
+    font-size: clamp(11px, 3vw, 13px);
+  }
+
+  .right {
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+.fxPanel {
+  position: absolute;
+  top: clamp(8px, 1.2vw, 12px);
+  right: clamp(8px, 1.2vw, 12px);
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 3px;
+}
+
+.fxBtn {
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  line-height: 1;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.fxBtnActive {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .fxBtn:hover {
+    color: var(--text-secondary);
+  }
+}
+
+.fxGrain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  animation: grainShift 0.5s steps(6) infinite;
+}
+
+@keyframes grainShift {
+  0% { transform: translate(0, 0); }
+  16% { transform: translate(-2%, 3%); }
+  33% { transform: translate(3%, -1%); }
+  50% { transform: translate(-1%, 2%); }
+  66% { transform: translate(2%, -3%); }
+  83% { transform: translate(-3%, 1%); }
+  100% { transform: translate(0, 0); }
+}

@@ -1,0 +1,276 @@
+.page {
+  padding-top: var(--header-h, 40px);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.topBar {
+  padding: clamp(8px, 1.2vw, 12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 769px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heroContent {
+  padding: clamp(24px, 4vw, 48px) clamp(8px, 1.2vw, 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 769px) {
+  .heroContent {
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+}
+
+.heroImageWrap {
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  position: relative;
+}
+
+.heroImageWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--brand) 0%, transparent 60%);
+}
+
+@media (min-width: 769px) {
+  .heroImageWrap {
+    min-height: 0;
+  }
+}
+
+.label {
+  font-size: clamp(11px, 0.9vw, 13px);
+  font-weight: 700;
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: clamp(6px, 1vw, 12px);
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 clamp(10px, 1.5vw, 20px);
+  max-width: 800px;
+}
+
+.highlight {
+  color: var(--brand);
+}
+
+.intro {
+  font-size: clamp(13px, 1.1vw, 16px);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.bodyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 769px) {
+  .bodyGrid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.formSection {
+  padding: clamp(24px, 4vw, 48px) clamp(8px, 1.2vw, 12px);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 769px) {
+  .formSection {
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+}
+
+.infoSection {
+  padding: clamp(24px, 4vw, 48px) clamp(8px, 1.2vw, 12px);
+}
+
+.sectionTitle {
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 700;
+  margin: 0 0 clamp(20px, 2.5vw, 32px);
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+@media (min-width: 769px) {
+  .fieldRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.fieldLabel {
+  font-size: clamp(11px, 0.9vw, 13px);
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.optional {
+  font-weight: 400;
+  text-transform: none;
+  color: var(--text-secondary);
+}
+
+.input,
+.textarea {
+  font-family: 'Plus Jakarta Sans Variable', sans-serif;
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 500;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: clamp(10px, 1.2vw, 14px) clamp(12px, 1.2vw, 16px);
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-color: var(--brand);
+  }
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  padding: 0 clamp(24px, 3vw, 36px);
+  height: clamp(44px, 5vw, 52px);
+  font-family: 'Plus Jakarta Sans Variable', sans-serif;
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  align-self: flex-start;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.infoItem {
+  padding: clamp(16px, 2vw, 24px) 0;
+  border-bottom: 1px solid var(--border);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.infoLabel {
+  font-size: clamp(10px, 0.8vw, 12px);
+  font-weight: 700;
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.infoValue {
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: var(--text);
+  font-weight: 500;
+  display: block;
+  line-height: 1.6;
+}

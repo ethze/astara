@@ -1,0 +1,61 @@
+.hoverTarget {
+  cursor: pointer;
+}
+
+.crosshair {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100svh;
+
+  .center {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    width: 30px;
+    aspect-ratio: 1;
+  }
+
+  .corner {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--brand);
+  }
+
+  .corner.tl {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  .corner.tr {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+  }
+  .corner.bl {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+  }
+  .corner.br {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+  }
+
+}
+
+/* Hide custom cursor overlay on small screens to avoid touch layout issues */
+@media (max-width: 768px) {
+  .crosshair {
+    display: none;
+  }
+}
+
