@@ -114,6 +114,7 @@ export default function Section2({ hideBtn }) {
         </div>
       </section>
 
+      {hideBtn && (
       <section className={styles.outsource}>
         <div className={styles.outsourceInner}>
           <h2 className={styles.outsourceTitle}>{dict.section2.outsourceTitle}</h2>
@@ -127,6 +128,7 @@ export default function Section2({ hideBtn }) {
           </div>
         </div>
       </section>
+      )}
     </>
   );
 }
