@@ -79,7 +79,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (openIdx === null) return;
+    if (openIdx === null && !langOpen) return;
     const handleClick = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
         close();
@@ -87,7 +87,7 @@ export default function Navbar() {
     };
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
-  }, [openIdx]);
+  }, [openIdx, langOpen]);
 
   const lenis = useLenis();
 
