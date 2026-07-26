@@ -15,6 +15,7 @@ export default function Section4() {
   const mainCameraRef = useRef(null);
   const camTargetRef = useRef(null);
   const posRef = useRef(null);
+  const [posVisible, setPosVisible] = useState(true);
 
   useEffect(() => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -266,7 +267,13 @@ export default function Section4() {
       </div>
       <div className={styles.right}>
         <div className={styles.canvasArea} ref={containerRef}>
-          <div className={styles.posIndicator} ref={posRef}>
+          <button className={styles.posToggle} onClick={() => setPosVisible((v) => !v)}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+          <div className={`${styles.posIndicator} ${posVisible ? '' : styles.posHidden}`} ref={posRef}>
             <span className={styles.posLabel}>CAM</span>
             <span className={styles.posVal}>X 0.00</span>
             <span className={styles.posVal}>Y 0.00</span>
