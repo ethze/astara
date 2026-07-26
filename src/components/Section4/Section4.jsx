@@ -267,7 +267,7 @@ export default function Section4() {
       </div>
       <div className={styles.right}>
         <div className={styles.canvasArea} ref={containerRef}>
-          <button className={styles.posToggle} onClick={() => setPosVisible((v) => !v)}>
+          <button className={styles.posToggle} onClick={() => setPosVisible((v) => !v)} aria-label="Toggle camera position">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>

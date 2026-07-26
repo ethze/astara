@@ -146,7 +146,7 @@ export default function Navbar() {
         <div className={styles.navGroupRight}>
           <ThemeToggle />
           <div className={styles.langWrap}>
-            <button className={styles.langBtn} onClick={() => setLangOpen(prev => !prev)}>
+            <button className={styles.langBtn} onClick={() => setLangOpen(prev => !prev)} aria-label={dict.nav.language}>
               {currentFlag} {currentLabel}
               <svg className={styles.langArrow} width="8" height="8" viewBox="0 0 10 10" fill="none">
                 <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

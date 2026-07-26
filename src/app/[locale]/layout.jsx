@@ -15,13 +15,13 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: dict.common.brand,
       description: dict.common.tagline,
-      images: ['/og.jpg'],
+      images: ['/og.webp'],
     },
     twitter: {
       card: 'summary_large_image',
       title: dict.common.brand,
       description: dict.common.tagline,
-      images: ['/og.jpg'],
+      images: ['/og.webp'],
     },
   };
 }

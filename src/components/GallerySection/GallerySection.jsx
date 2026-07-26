@@ -117,12 +117,12 @@ export default function GallerySection() {
         ))}
       </div>
       <div className={styles.arrowRow}>
-        <button className={styles.arrowBtn} style={{ opacity: scrollDir.left ? 1 : 0.3 }} onClick={() => scroll('left')}>
+        <button className={styles.arrowBtn} style={{ opacity: scrollDir.left ? 1 : 0.3 }} onClick={() => scroll('left')} aria-label="Scroll left">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter">
             <path d="M19 12H5M5 12l7 7M5 12l7-7" />
           </svg>
         </button>
-        <button className={styles.arrowBtn} style={{ opacity: scrollDir.right ? 1 : 0.3 }} onClick={() => scroll('right')}>
+        <button className={styles.arrowBtn} style={{ opacity: scrollDir.right ? 1 : 0.3 }} onClick={() => scroll('right')} aria-label="Scroll right">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter">
             <path d="M5 12h14M19 12l-7-7M19 12l-7 7" />
           </svg>
@@ -134,7 +134,7 @@ export default function GallerySection() {
         <div className={`${styles.modalBackdrop} ${closing ? styles.closing : ''}`} onClick={closeModal}>
           <div className={`${styles.modal} ${closing ? styles.closing : ''}`} onClick={(e) => e.stopPropagation()}>
             <div className={styles.modalInner}>
-              <button className={styles.modalClose} onClick={closeModal}>
+              <button className={styles.modalClose} onClick={closeModal} aria-label="Close">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square">
                   <path d="M6 6l12 12M18 6l-12 12" />
                 </svg>

@@ -10,13 +10,13 @@ const GallerySection = dynamic(() => import('@/components/GallerySection/Gallery
 
 export default function Home() {
   return (
-    <div className={styles.sections}>
+    <main className={styles.sections}>
       <HeroSection />
       <Section2 />
       <Section3 />
       <DynamicSection4 />
       <Section5 />
       <GallerySection />
-    </div>
+    </main>
   );
 }

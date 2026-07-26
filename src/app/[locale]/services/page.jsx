@@ -10,7 +10,7 @@ export default function ServicesPage() {
   const loc = (path) => `/${locale}${path}`;
 
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
       <div className={styles.topBar}>
         <Link href={loc('/')} className={styles.backBtn}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="miter">
@@ -32,6 +32,6 @@ export default function ServicesPage() {
         <div className={styles.heroImageWrap} style={{ backgroundImage: 'url(/1.webp)' }} />
       </section>
       <Section2 hideBtn />
-    </div>
+    </main>
   );
 }

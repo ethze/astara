@@ -9,7 +9,7 @@ export default function NotFound() {
   const loc = (path) => `/${locale}${path}`;
 
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
       <div className={styles.content}>
         <span className={styles.code}>404</span>
         <h1 className={styles.title}>{dict.notFound.title}</h1>
@@ -28,6 +28,6 @@ export default function NotFound() {
           <div key={i} className={styles.gridLine} style={{ '--i': i }} />
         ))}
       </div>
-    </div>
+    </main>
   );
 }

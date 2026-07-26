@@ -44,7 +44,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.btnRow}>
-        <a href={loc('/contact')} className={styles.btn} ref={btnRef}>
+        <a href={loc('/contact')} className={styles.btn} ref={btnRef} aria-label={dict.footer.cta}>
           <span ref={btnTextRef} className={styles.btnText}>{dict.footer.cta}</span>
           <span className={styles.btnIcon}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -58,7 +58,7 @@ export default function Footer() {
 
       <div className={styles.grid}>
         <div className={styles.columnBrand}>
-          <Link href={loc('/')} className={styles.logoWrap}>
+          <Link href={loc('/')} className={styles.logoWrap} aria-label={dict.common.brand}>
             <Logo className={styles.footerLogo} />
             <div className={styles.brandText}>
               <span className={styles.brandName}>{dict.common.brand}</span>
