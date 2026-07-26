@@ -2,37 +2,9 @@
 
 Astara is a technology integration company based in Jakarta, Indonesia. We deliver end-to-end technology solutions including hardware, software, infrastructure, and UI/UX design.
 
-## Services
-
-- IT Outsourcing Partner
-- Interactive Chair & Mechatronics (Racing Simulator 2DOF / 3DOF)
-- Smartboard Interactive
-- LED Videotron Display
-- GSM Jammer
-- GSM / LTE BTS
-- IMSI Catcher
-
-## Products
-
-- Interactive Chair
-- Smartboard Interactive
-- LED Videotron
-- GSM Jammer
-- GSM / LTE BTS
-- IMSI Catcher
-
-## Contact
-
-- Website: https://astara.id
-- Email: office@astara.id
-- Phone: 0859 2532 7256
-- Address: Menara 165, 4th Floor, Jl. TB Simatupang Kav.1, Cilandak Timur, Jakarta Selatan 12560
-
-## Pages
-
-- Home: https://astara.id/en
-- About: https://astara.id/en/about
-- Services: https://astara.id/en/services
-- Products: https://astara.id/en/products/interactive-chair
-- Contact: https://astara.id/en/contact
-- Career: https://astara.id/en/career
+- [Home](https://astara.id/en)
+- [About Us](https://astara.id/en/about)
+- [Services](https://astara.id/en/services)
+- [Products](https://astara.id/en/products/interactive-chair)
+- [Contact](https://astara.id/en/contact)
+- [Career](https://astara.id/en/career)
