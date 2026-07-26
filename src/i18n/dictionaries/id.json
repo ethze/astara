@@ -65,14 +65,14 @@
   },
   "section5": {
     "label": "Produk",
-    "title1": "Dirancang untuk",
-    "title2": "kinerja"
+    "title1": "Jelajahi",
+    "title2": "Produk Kami"
   },
   "gallery": {
     "label": "Momen & Dokumentasi",
     "title1": "Momen dari",
     "title2": "lapangan",
-    "desc": "Sorotan dari implementasi proyek, deployemen, seminar, dan kolaborasi strategis dengan klien dan mitra kami di berbagai industri.",
+    "desc": "Sorotan dari implementasi proyek, deployemen, dan kolaborasi strategis dengan klien dan mitra kami di berbagai industri.",
     "items": [
       { "meta": "01 / Proses Desain", "title": "Proses Desain", "desc": "Di balik layar alur kerja desain kami, dari sketsa konsep awal hingga pengembangan prototipe akhir." },
       { "meta": "02 / Rangkaian", "title": "Rangkaian Elektronika", "desc": "Tim internal Astara sedang merangkai rangkaian elektronika untuk sistem kursi interaktif, memastikan setiap komponen terintegrasi dengan presisi." },

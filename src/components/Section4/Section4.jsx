@@ -14,6 +14,7 @@ export default function Section4() {
   const [gesture, setGesture] = useState(null);
   const mainCameraRef = useRef(null);
   const camTargetRef = useRef(null);
+  const posRef = useRef(null);
 
   useEffect(() => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -40,7 +41,7 @@ export default function Section4() {
       scene.background = bgColor;
 
       const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
-      camera.position.set(3, 3, 6);
+      camera.position.set(-7.44, 2.12, 9.36);
       camera.lookAt(0, 0, 0);
       mainCameraRef.current = camera;
 
@@ -198,6 +199,12 @@ export default function Section4() {
 
         controls.update();
         renderer.render(scene, camera);
+
+        if (posRef.current && frameCount % 3 === 0) {
+          posRef.current.children[1].textContent = 'X ' + camera.position.x.toFixed(2);
+          posRef.current.children[2].textContent = 'Y ' + camera.position.y.toFixed(2);
+          posRef.current.children[3].textContent = 'Z ' + camera.position.z.toFixed(2);
+        }
       };
       animId = requestAnimationFrame(animate);
 
@@ -259,6 +266,12 @@ export default function Section4() {
       </div>
       <div className={styles.right}>
         <div className={styles.canvasArea} ref={containerRef}>
+          <div className={styles.posIndicator} ref={posRef}>
+            <span className={styles.posLabel}>CAM</span>
+            <span className={styles.posVal}>X 0.00</span>
+            <span className={styles.posVal}>Y 0.00</span>
+            <span className={styles.posVal}>Z 0.00</span>
+          </div>
           {gesture && (
             <div className={`${styles.gestureHint} ${styles.gestureHintVisible}`}>
               {gesture === 'scroll' ? (

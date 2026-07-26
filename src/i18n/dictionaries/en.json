@@ -65,14 +65,14 @@
   },
   "section5": {
     "label": "Products",
-    "title1": "Built for",
-    "title2": "performance"
+    "title1": "Explore",
+    "title2": "Our Products"
   },
   "gallery": {
     "label": "Moments & Documentation",
     "title1": "Moments from the",
     "title2": "field",
-    "desc": "Highlights from project implementations, deployments, seminars, and strategic collaborations with our clients and partners across industries.",
+    "desc": "Highlights from project implementations, deployments, and strategic collaborations with our clients and partners across industries.",
     "items": [
       { "meta": "01 / Design Process", "title": "Design Process", "desc": "Behind the scenes of our design workflow, from initial concept sketches to final prototype development." },
       { "meta": "02 / Assembly", "title": "Electronics Assembly", "desc": "Astara's internal team assembling the electronics for the interactive chair system, ensuring every component is precisely integrated." },
