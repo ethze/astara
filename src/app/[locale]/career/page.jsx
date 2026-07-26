@@ -59,7 +59,7 @@ export default function CareerPage() {
                     <div className={styles.positionMeta}>
                       <span className={styles.positionType}>{pos.type}</span>
                       <span className={styles.positionLocation}>{pos.location}</span>
-    </main>
+                    </div>
                   </div>
                   <svg className={`${styles.positionArrow} ${openId === idx ? styles.positionArrowOpen : ''}`} viewBox="0 0 10 10" fill="none">
                     <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -153,6 +153,6 @@ export default function CareerPage() {
           </form>
         </section>
       </div>
-    </div>
+    </main>
   );
 }

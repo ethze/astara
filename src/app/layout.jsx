@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning>
       <head>
+        <link rel="preload" href="/PlusJakartaSans-VariableFont.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script dangerouslySetInnerHTML={{ __html: langScript }} />
       </head>
