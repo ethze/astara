@@ -1,6 +1,6 @@
 import styles from './Logo.module.scss';
 
-const LOGO_VARIANT = 'new'; // 'new' | 'old' — ganti di sini buat swap logo navbar & footer
+const LOGO_VARIANT = 'old'; // 'new' | 'old' — ganti di sini buat swap logo navbar & footer
 
 function LogoMark({ path, className }) {
   return (
