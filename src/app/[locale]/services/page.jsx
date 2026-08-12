@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useI18n } from '@/i18n/context';
-import Section2 from '@/components/Section2/Section2';
+import ServicesOverview from '@/components/ServicesOverview/ServicesOverview';
 import styles from './services.module.scss';
 
 export default function ServicesPage() {
@@ -31,7 +31,7 @@ export default function ServicesPage() {
         </div>
         <div className={styles.heroImageWrap} style={{ backgroundImage: 'url(/1.webp)' }} />
       </section>
-      <Section2 hideBtn />
+      <ServicesOverview hideBtn />
     </main>
   );
 }

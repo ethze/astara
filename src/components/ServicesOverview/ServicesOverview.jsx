@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useI18n } from '@/i18n/context';
-import styles from './Section2.module.scss';
+import styles from './ServicesOverview.module.scss';
 
 const categories = [
   {
@@ -36,7 +36,7 @@ const categories = [
   },
 ];
 
-export default function Section2({ hideBtn }) {
+export default function ServicesOverview({ hideBtn }) {
   const { dict, locale } = useI18n();
   const btnRef = useRef(null);
   const btnTextRef = useRef(null);

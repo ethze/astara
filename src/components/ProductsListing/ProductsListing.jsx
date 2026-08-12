@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import products from '@/data/products';
 import { useI18n } from '@/i18n/context';
-import styles from './Section5.module.scss';
+import styles from './ProductsListing.module.scss';
 
-export default function Section5() {
+export default function ProductsListing() {
   const { dict, locale } = useI18n();
   const loc = (path) => `/${locale}${path}`;
 

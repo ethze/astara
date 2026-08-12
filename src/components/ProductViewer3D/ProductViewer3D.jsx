@@ -1,6 +1,6 @@
-import styles from './Section3.module.scss';
+import styles from './ProductViewer3D.module.scss';
 
-export default function Section3() {
+export default function ProductViewer3D() {
   return (
     <section className={styles.section}>
       <div className={styles.wrap}>

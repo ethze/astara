@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { useModel } from '@/components/ModelContext/ModelContext';
 import { useI18n } from '@/i18n/context';
-import styles from './Section4.module.scss';
+import styles from './InteractiveChair.module.scss';
 
 const FX_NONE = 'none';
 
-export default function Section4() {
+export default function InteractiveChair() {
   const { dict } = useI18n();
   const containerRef = useRef(null);
   const { glbScene } = useModel();
