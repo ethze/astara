@@ -1,5 +1,5 @@
 .container {
-  margin-top: var(--header-h, 40px);
+  margin-top: var(--header-h, 50px);
   padding: 0 clamp(8px, 1.2vw, 12px);
   background: var(--bg);
 }
@@ -7,7 +7,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100svh - var(--header-h, 40px));
+height: calc(100svh - var(--header-h, 50px));
   overflow: hidden;
 }
 
@@ -202,7 +202,7 @@
 @media (max-width: 780px) {
   .hero {
     height: auto;
-    min-height: calc(100svh - var(--header-h, 40px));
+    min-height: calc(100svh - var(--header-h, 50px));
     overflow: visible;
     display: flex;
     flex-direction: column;

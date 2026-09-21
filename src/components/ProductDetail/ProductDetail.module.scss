@@ -1,7 +1,7 @@
 .page {
   background: var(--bg);
   color: var(--text);
-  padding-top: var(--header-h, 40px);
+  padding-top: var(--header-h, 50px);
 }
 
 .topBar {
@@ -52,7 +52,7 @@
   padding: clamp(16px, 2vw, 24px);
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  max-height: clamp(200px, 30vw, 280px);
+  max-height: clamp(280px, 40vw, 400px);
   overflow: hidden;
 }
 
@@ -65,8 +65,8 @@
 
 .heroImage {
   width: 100%;
-  max-width: 240px;
-  max-height: 240px;
+  max-width: 360px;
+  max-height: 360px;
   height: auto;
   object-fit: contain;
 }

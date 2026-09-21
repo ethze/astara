@@ -108,7 +108,7 @@ export default function Navbar() {
         <div className={styles.logo}>
           <Link href={loc('/')} aria-label={dict.common.brand}><Logo /><span className={styles.srOnly}>{dict.common.brand}</span></Link>
           <div className={styles.logoText}>
-            <Link href={loc('/')}>Astara&trade;</Link>
+            <Link href={loc('/')}>Astara</Link>
             <span>{dict.common.tagline}</span>
           </div>
         </div>

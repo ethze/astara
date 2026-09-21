@@ -66,8 +66,8 @@
 }
 
 .cardImageWrap {
-  width: clamp(100px, 12vw, 160px);
-  height: clamp(70px, 8vw, 110px);
+  width: clamp(140px, 20vw, 280px);
+  height: clamp(100px, 14vw, 200px);
   flex-shrink: 0;
   overflow: hidden;
   margin-left: clamp(20px, 4vw, 50px);
@@ -98,7 +98,7 @@
 
 .cardCategory {
   color: var(--brand);
-  font-size: var(--text-2xs);
+  font-size: var(--text-xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -106,7 +106,7 @@
 
 .cardTitle {
   color: var(--text);
-  font-size: clamp(15px, 1.5vw, 20px);
+  font-size: clamp(18px, 2vw, 26px);
   font-weight: 700;
   line-height: 1.2;
 }
