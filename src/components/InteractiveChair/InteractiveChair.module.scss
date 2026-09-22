@@ -221,10 +221,6 @@
   border-color: var(--brand);
 }
 
-.rotateToggle {
-  top: calc(clamp(8px, 1.2vw, 12px) + clamp(28px, 2.5vw, 32px) + 4px);
-}
-
 .posLabel {
   font-weight: 700;
   color: var(--brand);
