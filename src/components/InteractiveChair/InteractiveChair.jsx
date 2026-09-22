@@ -16,6 +16,8 @@ export default function InteractiveChair() {
   const camTargetRef = useRef(null);
   const posRef = useRef(null);
   const [posVisible, setPosVisible] = useState(true);
+  const [autoRotate, setAutoRotate] = useState(true);
+  const controlsRef = useRef(null);
 
   useEffect(() => {
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -42,7 +44,12 @@ export default function InteractiveChair() {
       scene.background = bgColor;
 
       const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
-      camera.position.set(-7.44, 2.12, 9.36);
+      const isMobileView = window.innerWidth <= 768;
+      camera.position.set(
+        isMobileView ? -6.00 : -7.00,
+        isMobileView ? -1.81 : -1.71,
+        isMobileView ? 10.97 : 7.84
+      );
       camera.lookAt(0, 0, 0);
       mainCameraRef.current = camera;
 
@@ -100,6 +107,7 @@ export default function InteractiveChair() {
       controls.autoRotateSpeed = 2;
       controls.enablePan = false;
       controls.enableZoom = false;
+      controlsRef.current = controls;
 
       let targetLen = camera.position.length();
       const MIN_LEN = 3;
@@ -271,6 +279,12 @@ export default function InteractiveChair() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+          <button className={`${styles.posToggle} ${styles.rotateToggle}`} onClick={() => { const next = !autoRotate; setAutoRotate(next); controlsRef.current && (controlsRef.current.autoRotate = next); }} aria-label="Toggle auto rotate">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
             </svg>
           </button>
           <div className={`${styles.posIndicator} ${posVisible ? '' : styles.posHidden}`} ref={posRef}>
