@@ -66,8 +66,8 @@
 }
 
 .cardImageWrap {
-  width: clamp(140px, 20vw, 280px);
-  height: clamp(100px, 14vw, 200px);
+  width: clamp(160px, 24vw, 340px);
+  height: clamp(115px, 17vw, 240px);
   flex-shrink: 0;
   overflow: hidden;
   margin-left: clamp(20px, 4vw, 50px);
@@ -124,5 +124,11 @@
 
   .cardRight {
     width: 50%;
+  }
+
+  .cardImageWrap {
+    width: clamp(140px, 32vw, 200px);
+    height: clamp(100px, 22vw, 140px);
+    margin-left: clamp(10px, 3vw, 20px);
   }
 }

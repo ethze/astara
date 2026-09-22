@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className={styles.heroImageWrap} style={{ backgroundImage: 'url(/1.webp)' }} />
       </section>
 
-      <section className={styles.milestones}>
+      {/* <section className={styles.milestones}>
         <h2 className={styles.sectionTitle}>{dict.about.milestonesTitle}</h2>
         <div className={styles.timeline}>
           {dict.about.milestones.map((m) => (
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.dualSection}>
         <div className={styles.dualCol}>
@@ -68,7 +68,25 @@ export default function AboutPage() {
           {dict.about.values.map((v, i) => (
             <div key={v.title} className={styles.valueCard}>
               <div className={styles.valueNum}>
-                {String.fromCharCode(65 + i)}
+                {i === 0 && (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                )}
+                {i === 1 && (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                )}
+                {i === 2 && (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <polyline points="9 12 11 14 15 10" />
+                  </svg>
+                )}
               </div>
               <h3 className={styles.valueTitle}>{v.title}</h3>
               <p className={styles.valueDesc}>{v.desc}</p>
