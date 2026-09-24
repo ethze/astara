@@ -15,14 +15,25 @@ height: calc(100svh - var(--header-h, 50px));
   position: absolute;
   bottom: 8px;
   right: 8px;
-  width: clamp(500px, 80vw, 1100px);
   height: auto;
   z-index: 1;
   pointer-events: none;
   transition: filter 0.3s ease;
 }
 
-:global(.dark) .heroBgSvg {
+.heroBgDesktop {
+  width: clamp(350px, 55vw, 750px);
+  max-height: 55%;
+  object-fit: contain;
+  object-position: right bottom;
+  right: 0;
+}
+
+.heroBgMobile {
+  display: none;
+}
+
+:global(.dark) .heroBgMobile {
   filter: invert(1);
 }
 
@@ -208,7 +219,12 @@ height: calc(100svh - var(--header-h, 50px));
     flex-direction: column;
   }
 
-  .heroBgSvg {
+  .heroBgDesktop {
+    display: none !important;
+  }
+
+  .heroBgMobile {
+    display: block;
     --h: clamp(40px, 10vh, 120px);
     width: auto;
     height: var(--h);

@@ -30,7 +30,8 @@ export default function HeroSection() {
   return (
     <div className={styles.container}>
       <section className={styles.hero}>
-        <img src="/asci.svg" alt="" className={styles.heroBgSvg} />
+        <img src="/asci.svg" alt="" className={`${styles.heroBgSvg} ${styles.heroBgMobile}`} />
+        <img src="/as-alt.png" alt="" className={`${styles.heroBgSvg} ${styles.heroBgDesktop}`} />
         <div className={styles.heroImages}>
           <div className={styles.heroImgWrap}>
             <img src="/1.webp" alt="" className={styles.heroImg} loading="eager" decoding="async" />

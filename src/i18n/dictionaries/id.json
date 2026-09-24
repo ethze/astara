@@ -137,6 +137,7 @@
     "title2": "masa depan teknologi",
     "intro": "Kami selalu mencari individu berbakat yang memiliki semangat terhadap teknologi dan inovasi. Jelajahi posisi terbuka kami dan temukan kesempatan berikutnya.",
     "positionsTitle": "Posisi Tersedia",
+    "positionsEmpty": "Belum ada posisi yang tersedia saat ini. Silakan cek kembali nanti.",
     "requirements": "Persyaratan",
     "applyTitle": "Lamar sekarang",
     "name": "Nama Anda",
@@ -147,13 +148,7 @@
     "chooseFile": "Pilih file",
     "uploadHint": "PDF, DOC, atau DOCX (maks 5MB)",
     "submit": "Kirim Lamaran",
-    "positions": [
-      { "title": "Frontend Developer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Membangun dan memelihara aplikasi web responsif menggunakan framework JavaScript modern.", "requirements": ["Pengalaman 2+ tahun dengan React / Next.js", "Pemahaman kuat tentang HTML, CSS, dan JavaScript", "Pengalaman dengan desain responsif dan kompatibilitas lintas browser", "Familiaritas dengan version control (Git)", "Kemampuan komunikasi dan kerja tim yang baik"] },
-      { "title": "Backend Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Merancang dan mengembangkan aplikasi server-side yang skalabel dan API.", "requirements": ["Pengalaman 3+ tahun dalam pengembangan backend", "Keahlian dalam Node.js, Python, atau Go", "Pengalaman dengan database relasional dan non-relasional", "Pemahaman layanan cloud (AWS/GCP)", "Kemampuan pemecahan masalah dan analitis yang kuat"] },
-      { "title": "UI/UX Designer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Menciptakan antarmuka yang intuitif dan menarik secara visual untuk produk web dan seluler.", "requirements": ["Pengalaman 2+ tahun dalam desain UI/UX", "Keahlian dalam Figma atau alat desain serupa", "Portofolio kuat yang menunjukkan design thinking", "Pemahaman prinsip aksesibilitas dan kegunaan", "Kemampuan berkolaborasi erat dengan pengembang"] },
-      { "title": "Network Engineer", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Mengkonfigurasi, dan memelihara infrastruktur jaringan perusahaan.", "requirements": ["Pengalaman 3+ tahun dalam rekayasa jaringan", "Sertifikasi CCNA/CCNP lebih disukai", "Pengalaman dengan konfigurasi firewall, VPN, dan load balancer", "Pengetahuan TCP/IP, DNS, dan protokol routing", "Kemampuan memecahkan masalah jaringan yang kompleks"] },
-      { "title": "Project Manager", "type": "Full-time", "location": "Jakarta, Indonesia", "desc": "Memimpin tim lintas fungsi untuk menghasilkan proyek teknologi tepat waktu dan sesuai anggaran.", "requirements": ["Pengalaman 3+ tahun dalam manajemen proyek", "Sertifikasi PMP atau Scrum Master merupakan nilai tambah", "Keterampilan organisasi dan kepemimpinan yang kuat", "Komunikasi yang sangat baik dengan pemangku kepentingan", "Pengalaman dengan metodologi Agile/Scrum"] }
-    ]
+    "positions": []
   },
   "productDetail": {
     "specs": "Spesifikasi",

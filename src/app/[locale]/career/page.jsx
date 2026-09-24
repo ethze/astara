@@ -10,6 +10,7 @@ export default function CareerPage() {
   const loc = (path) => `/${locale}${path}`;
   const [openId, setOpenId] = useState(null);
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
+  const hasPositions = (dict.career.positions || []).length > 0;
 
   const toggle = (id) => {
     setOpenId(openId === id ? null : id);
@@ -21,6 +22,12 @@ export default function CareerPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!hasPositions) return;
+    const subject = encodeURIComponent(`Application from ${form.name}`);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone || '-'}\n\n${form.message || ''}`
+    );
+    window.open(`https://mail.google.com/mail/?view=cm&to=office@astara.id&su=${subject}&body=${body}`, '_blank');
   };
 
   return (
@@ -51,7 +58,10 @@ export default function CareerPage() {
         <section className={styles.positionsSection} data-lenis-prevent>
           <h2 className={styles.sectionTitle}>{dict.career.positionsTitle}</h2>
           <div className={styles.positionsList} data-lenis-prevent>
-            {dict.career.positions.map((pos, idx) => (
+            {(dict.career.positions || []).length === 0 && (
+              <p className={styles.positionsEmpty}>{dict.career.positionsEmpty}</p>
+            )}
+            {(dict.career.positions || []).map((pos, idx) => (
               <div key={idx} className={`${styles.positionItem} ${openId === idx ? styles.positionItemOpen : ''}`}>
                 <button className={styles.positionBtn} onClick={() => toggle(idx)}>
                   <div className={styles.positionBtnLeft}>
@@ -143,7 +153,7 @@ export default function CareerPage() {
               </label>
               <span className={styles.uploadHint}>{dict.career.uploadHint}</span>
             </div>
-            <button type="submit" className={styles.submitBtn}>
+            <button type="submit" className={styles.submitBtn} disabled={!hasPositions}>
               <span>{dict.career.submit}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 2L11 13" />

@@ -16,6 +16,11 @@ export default function ContactPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Contact from ${form.name}`);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone || '-'}\n\n${form.message || ''}`
+    );
+    window.open(`https://mail.google.com/mail/?view=cm&to=office@astara.id&su=${subject}&body=${body}`, '_blank');
   };
 
   return (
